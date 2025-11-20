@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat AI Groq</title>
+  <style>
+    body { 
+      font-family: Arial; 
+      background:#111; 
+      color:white; 
+      padding:20px; 
+    }
+    #chat { 
+      height: 400px; 
+      overflow-y: auto; 
+      border:1px solid #444; 
+      padding:10px; 
+      margin-bottom: 10px;
+    }
+    input { 
+      width:80%; 
+      padding:10px; 
+      border:none;
+      outline:none;
+    }
+    button { 
+      padding:10px 15px; 
+      cursor:pointer;
+      background:#4a4aff;
+      border:none;
+      color:white;
+      border-radius:5px;
+    }
+    .msg { margin:5px 0; }
+  </style>
+</head>
+<body>
+  <h2>Chat AI (Groq)</h2>
+  <div id="chat"></div>
+  
+  <input id="msg" placeholder="Tulis pesan...">
+  <button onclick="sendMsg()">Kirim</button>
+
+  <script src="script.js"></script>
+</body>
+  </html>
